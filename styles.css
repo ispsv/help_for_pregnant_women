@@ -1,0 +1,97 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000; /* Default text color */
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab.active {
+    border-bottom: 2px solid #007BFF;
+}
+
+.tab-content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center-aligns all text in tab content */
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center-aligns form text */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.support-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+}
+
+.text-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent; /* No background color */
+    overflow: auto; /* Allow scrolling if the text is too long */
+    min-height: 100px; /* Ensure the text box has some height */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks in text */
+    border: none; /* Remove border */
+}
+
+.support-form .text-box {
+    font-size: 24px; /* Adjust font size if needed */
+}
+
+.support-form label {
+    font-size: 72px; /* Four times the size of 18px */
+    text-transform: uppercase; /* Make text all capital letters */
+}
